@@ -10,6 +10,7 @@ services:
       - "4000:4000"
     environment:
       - OPENROUTER_API_KEY=${OPENROUTER_API_KEY}
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
       - LITELLM_MASTER_KEY=${LITELLM_MASTER_KEY}
       - REDIS_HOST=redis
       - REDIS_PORT=6379
