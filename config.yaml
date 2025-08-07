@@ -1,0 +1,55 @@
+# LiteLLM Proxy Configuration
+# This configuration sets up a proxy server for multiple AI models
+
+model_list:
+  - model_name: qwen3-coder
+    litellm_params:
+      model: openrouter/qwen/qwen3-coder
+      api_key: os.environ/OPENROUTER_API_KEY
+  - model_name: gemini-2.5-flash
+    litellm_params:
+      model: openrouter/google/gemini-2.5-flash
+      api_key: os.environ/OPENROUTER_API_KEY
+  - model_name: horizon-beta
+    litellm_params:
+      model: openrouter/openrouter/horizon-beta
+      api_key: os.environ/OPENROUTER_API_KEY
+  - model_name: deepseek-chat-v3
+    litellm_params:
+      model: openrouter/deepseek/deepseek-chat-v3-0324
+      api_key: os.environ/OPENROUTER_API_KEY
+  - model_name: gemini-2.5-pro
+    litellm_params:
+      model: openrouter/google/gemini-2.5-pro
+      api_key: os.environ/OPENROUTER_API_KEY
+  - model_name: kimi-k2
+    litellm_params:
+      model: openrouter/moonshotai/kimi-k2
+      api_key: os.environ/OPENROUTER_API_KEY
+
+# General settings
+general_settings:
+  # Master key for authenticating to the proxy
+  master_key: os.environ/LITELLM_MASTER_KEY
+
+  # Set custom port (default is 4000)
+  port: 4000
+
+  # Enable CORS for web requests
+  cors: true
+
+  # Set request timeout (in seconds)
+  request_timeout: 600
+
+  # Enable streaming responses
+  stream: true
+
+  # Batch write setting
+  proxy_batch_write_at: 60
+
+router_settings:
+  redis_host: os.environ/REDIS_HOST
+  redis_port: os.environ/REDIS_PORT
+
+litellm_settings:
+  set_verbose: true
