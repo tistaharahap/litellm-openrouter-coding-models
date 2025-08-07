@@ -2,7 +2,7 @@
 
 A pre-configured [LiteLLM](https://github.com/BerriAI/litellm) proxy server with curated OpenRouter models optimized for coding tasks. This setup provides a unified API interface to access multiple state-of-the-art coding models through a single endpoint.
 
-## =� Features
+## 🚀 Features
 
 - **Coding-Optimized Models**: Pre-configured with top-performing coding models from OpenRouter
 - **Unified API**: Single endpoint compatible with OpenAI API format
@@ -11,7 +11,7 @@ A pre-configured [LiteLLM](https://github.com/BerriAI/litellm) proxy server with
 - **Authentication**: Master key authentication for secure access
 - **Request Logging**: Full request/response logging and analytics
 
-## > Available Models
+## 🤖 Available Models
 
 | Model Name | Provider | Description |
 |------------|----------|-------------|
@@ -22,7 +22,7 @@ A pre-configured [LiteLLM](https://github.com/BerriAI/litellm) proxy server with
 | `gemini-2.5-pro` | Google | High-performance model for complex coding tasks |
 | `kimi-k2` | Moonshot AI | Advanced reasoning for code analysis |
 
-## =� Quick Start with Docker Compose
+## 🛠️ Quick Start with Docker Compose
 
 ### 1. Clone and Configure
 
@@ -76,13 +76,13 @@ curl -X POST http://localhost:4000/v1/chat/completions \
   }'
 ```
 
-##  Coolify Deployment
+## ☁️ Coolify Deployment
 
 [Coolify](https://coolify.io/) provides an easy way to deploy this stack to any server.
 
 ### 1. Import Project
 
-1. In Coolify dashboard, click **New Resource** � **Docker Compose**
+1. In Coolify dashboard, click **New Resource** → **Docker Compose**
 2. Choose your Git repository or upload the project
 3. Coolify will automatically detect the `docker-compose.yaml`
 
@@ -108,7 +108,7 @@ POSTGRES_PASSWORD=your-secure-postgres-password
 2. Add your custom domain
 3. Coolify will automatically handle SSL certificates
 
-## =� Usage Examples
+## 📊 Usage Examples
 
 ### Python with OpenAI SDK
 
@@ -153,7 +153,7 @@ curl -X POST http://localhost:4000/v1/chat/completions \
   }'
 ```
 
-## =' Configuration
+## 🔧 Configuration
 
 ### Model Configuration
 
@@ -176,7 +176,7 @@ Key configuration options in `config.yaml`:
 - `stream`: Enable streaming responses
 - `set_verbose`: Enable detailed logging
 
-## =� Monitoring
+## 📈 Monitoring
 
 ### Health Checks
 
@@ -207,14 +207,14 @@ docker compose exec postgres psql -U litellm -d litellm
 docker compose exec redis redis-cli
 ```
 
-## =� Security
+## 🛡️ Security
 
 - **API Key Authentication**: All requests require the master key
 - **Non-root Containers**: All services run as non-root users
 - **Network Isolation**: Services communicate through isolated Docker network
 - **Data Persistence**: PostgreSQL and Redis data is persisted in Docker volumes
 
-## = Updates
+## 🔄 Updates
 
 ### Update LiteLLM
 
@@ -231,11 +231,12 @@ docker compose up -d litellm-proxy
 1. Edit `config.yaml`
 2. Restart the proxy: `docker compose restart litellm-proxy`
 
-## = Troubleshooting
+## 🐛 Troubleshooting
 
 ### Common Issues
 
 **Connection Refused**
+
 ```bash
 # Check if services are running
 docker compose ps
@@ -245,10 +246,12 @@ docker compose logs litellm-proxy
 ```
 
 **Authentication Errors**
+
 - Verify `LITELLM_MASTER_KEY` is set correctly
 - Ensure the `Authorization: Bearer` header is included
 
 **Model Not Found**
+
 - Check that the model name matches those in `config.yaml`
 - Verify your OpenRouter API key has access to the requested models
 
@@ -258,18 +261,18 @@ docker compose logs litellm-proxy
 # Stop all services
 docker compose down
 
-# Stop and remove volumes (� deletes data)
+# Stop and remove volumes (⚠️ deletes data)
 docker compose down -v
 
 # Rebuild and restart
 docker compose up -d --build
 ```
 
-## =� License
+## 📝 License
 
 This project uses the open-source LiteLLM proxy. Please refer to the [LiteLLM repository](https://github.com/BerriAI/litellm) for licensing information.
 
-## > Contributing
+## 🤝 Contributing
 
 1. Fork the repository
 2. Create a feature branch
