@@ -12,9 +12,9 @@ services:
       - REDIS_HOST=redis
       - REDIS_PORT=6379
       - DATABASE_URL=postgresql://litellm:${POSTGRES_PASSWORD}@postgres:5432/litellm
+      - LITELLM_CONFIG_PATH=/app/litellm_config.yaml
     volumes:
-      - ./config.yaml:/app/config.yaml
-    command: ["--config", "/app/config.yaml"]
+      - ./config.yaml:/app/litellm_config.yaml
     depends_on:
       redis:
         condition: service_healthy
