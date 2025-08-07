@@ -6,26 +6,32 @@ model_list:
     litellm_params:
       model: openrouter/qwen/qwen3-coder
       api_key: os.environ/OPENROUTER_API_KEY
+      drop_params: true
   - model_name: gemini-2.5-flash
     litellm_params:
       model: openrouter/google/gemini-2.5-flash
       api_key: os.environ/OPENROUTER_API_KEY
+      drop_params: true
   - model_name: horizon-beta
     litellm_params:
       model: openrouter/openrouter/horizon-beta
       api_key: os.environ/OPENROUTER_API_KEY
+      drop_params: true
   - model_name: deepseek-chat-v3
     litellm_params:
       model: openrouter/deepseek/deepseek-chat-v3-0324
       api_key: os.environ/OPENROUTER_API_KEY
+      drop_params: true
   - model_name: gemini-2.5-pro
     litellm_params:
       model: openrouter/google/gemini-2.5-pro
       api_key: os.environ/OPENROUTER_API_KEY
+      drop_params: true
   - model_name: kimi-k2
     litellm_params:
       model: openrouter/moonshotai/kimi-k2
       api_key: os.environ/OPENROUTER_API_KEY
+      drop_params: true
 
 # General settings
 general_settings:
