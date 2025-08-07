@@ -14,6 +14,7 @@ services:
       - DATABASE_URL=postgresql://litellm:${POSTGRES_PASSWORD}@postgres:5432/litellm
     volumes:
       - ./config.yaml:/app/config.yaml
+    command: ["litellm", "--config", "/app/config.yaml"]
     depends_on:
       redis:
         condition: service_healthy
