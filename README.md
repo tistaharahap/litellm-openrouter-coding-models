@@ -219,17 +219,14 @@ docker compose exec redis redis-cli
 ### Update LiteLLM
 
 ```bash
-# Pull latest image
-docker compose pull litellm-proxy
-
-# Restart with new image
-docker compose up -d litellm-proxy
+# Rebuild with latest base image
+docker compose up -d --build litellm-proxy
 ```
 
 ### Update Configuration
 
 1. Edit `config.yaml`
-2. Restart the proxy: `docker compose restart litellm-proxy`
+2. Rebuild and restart: `docker compose up -d --build litellm-proxy`
 
 ## 🐛 Troubleshooting
 
