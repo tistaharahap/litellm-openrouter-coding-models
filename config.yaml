@@ -53,6 +53,21 @@ model_list:
       model: ollama/hf.co/DevQuasar/LLM360.K2-Think-GGUF:Q4_K_M
       api_base: os.environ/OLLAMA_BASE_URL
       drop_params: true
+  - model_name: deepseek-coder
+    litellm_params:
+      model: ollama/deepseek-coder:33b
+      api_base: os.environ/OLLAMA_BASE_URL
+      drop_params: true
+  - model_name: deepseek-coder-v2
+    litellm_params:
+      model: ollama/deepseek-coder-v2:16b
+      api_base: os.environ/OLLAMA_BASE_URL
+      drop_params: true
+  - model_name: gpt-oss
+    litellm_params:
+      model: ollama/gpt-oss:20b
+      api_base: os.environ/OLLAMA_BASE_URL
+      drop_params: true
 
 # General settings
 general_settings:
