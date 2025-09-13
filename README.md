@@ -2,6 +2,8 @@
 
 A pre-configured [LiteLLM](https://github.com/BerriAI/litellm) proxy server with curated OpenRouter models optimized for coding tasks. This setup provides a unified API interface to access multiple state-of-the-art coding models through a single endpoint.
 
+The default config includes free OpenRouter models.
+
 ## 🚀 Features
 
 - **Coding-Optimized Models**: Pre-configured with top-performing coding models from OpenRouter
@@ -13,21 +15,21 @@ A pre-configured [LiteLLM](https://github.com/BerriAI/litellm) proxy server with
 
 ## 🤖 Available Models
 
-| Model Name | Provider | Description |
-|------------|----------|-------------|
-| `qwen3-coder` | Qwen | Advanced coding model with strong performance |
-| `gemini-2.5-flash` | Google | Fast, efficient model for quick coding tasks |
-| `horizon-beta` | OpenRouter | Cutting-edge experimental coding model |
-| `deepseek-chat-v3` | DeepSeek | Specialized in code understanding and generation |
-| `gemini-2.5-pro` | Google | High-performance model for complex coding tasks |
-| `kimi-k2` | Moonshot AI | Advanced reasoning for code analysis |
+| Model Name         | Provider    | Description                                      |
+| ------------------ | ----------- | ------------------------------------------------ |
+| `qwen3-coder`      | Qwen        | Advanced coding model with strong performance    |
+| `gemini-2.5-flash` | Google      | Fast, efficient model for quick coding tasks     |
+| `horizon-beta`     | OpenRouter  | Cutting-edge experimental coding model           |
+| `deepseek-chat-v3` | DeepSeek    | Specialized in code understanding and generation |
+| `gemini-2.5-pro`   | Google      | High-performance model for complex coding tasks  |
+| `kimi-k2`          | Moonshot AI | Advanced reasoning for code analysis             |
 
 ## 🛠️ Quick Start with Docker Compose
 
 ### 1. Clone and Configure
 
 ```bash
-git clone <repository-url>
+git clone git@github.com:tistaharahap/litellm-openrouter-coding-models.git
 cd litellm-proxy
 ```
 
