@@ -15,14 +15,16 @@ The default config includes free OpenRouter models.
 
 ## 🤖 Available Models
 
-| Model Name         | Provider    | Description                                      |
-| ------------------ | ----------- | ------------------------------------------------ |
-| `qwen3-coder`      | Qwen        | Advanced coding model with strong performance    |
-| `gemini-2.5-flash` | Google      | Fast, efficient model for quick coding tasks     |
-| `horizon-beta`     | OpenRouter  | Cutting-edge experimental coding model           |
-| `deepseek-chat-v3` | DeepSeek    | Specialized in code understanding and generation |
-| `gemini-2.5-pro`   | Google      | High-performance model for complex coding tasks  |
-| `kimi-k2`          | Moonshot AI | Advanced reasoning for code analysis             |
+| Model Name           | Trained By  |
+| -------------------- | ----------- |
+| `qwen3-coder`        | Qwen        |
+| `qwen3-coder-free`   | Qwen        |
+| `glm-air-4.5-free`   | Z.ai        |
+| `gemini-2.5-flash`   | Google      |
+| `deepseek-chat-v3`   | DeepSeek    |
+| `deepseek-v3.1-free` | DeepSeek    |
+| `gemini-2.5-pro`     | Google      |
+| `kimi-k2`            | Moonshot AI |
 
 ## 🛠️ Quick Start with Docker Compose
 

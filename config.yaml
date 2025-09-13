@@ -22,11 +22,6 @@ model_list:
       model: openrouter/google/gemini-2.5-flash
       api_key: os.environ/OPENROUTER_API_KEY
       drop_params: true
-  - model_name: horizon-beta
-    litellm_params:
-      model: openrouter/openrouter/horizon-beta
-      api_key: os.environ/OPENROUTER_API_KEY
-      drop_params: true
   - model_name: deepseek-chat-v3
     litellm_params:
       model: openrouter/deepseek/deepseek-chat-v3-0324
