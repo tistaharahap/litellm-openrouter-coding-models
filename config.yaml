@@ -48,6 +48,10 @@ model_list:
       api_key: os.environ/OPENAI_API_KEY
       drop_params: true
       additional_drop_params: ["max_tokens"]
+  - model_name: uae-k2
+    litellm_params:
+      model: ollama/hf.co/DevQuasar/LLM360.K2-Think-GGUF:Q4_K_M
+      api_base: os.environ/OLLAMA_BASE_URL
 
 # General settings
 general_settings:
